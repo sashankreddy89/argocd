@@ -11,5 +11,5 @@ spec:
     helm:
       releaseName: application-from-helm
     repoURL: https://github.com/sashankreddy89/argocd.git
-    path: v03-argocd-app/nginx
+    path: v03-argocd-app/helm/nginx
     targetRevision: main
