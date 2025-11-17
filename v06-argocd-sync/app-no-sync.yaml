@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-no-automated-sync
+spec:
+  project: default
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: no-sync
+  source:
+    repoURL: https://github.com/sashankreddy89/argocd.git
+    path: v03-argocd-app/nginx
+    targetRevision: main
